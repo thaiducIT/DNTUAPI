@@ -28,9 +28,23 @@ app.use(morgan('combined'))
 app.get('/',(req,res) => {
   return res.render('home')
 })
+
 app.get('/news',(req,res) => {
   return res.render('news')
 })
+
+app.get('/recruiting-college-students',(req,res) => {
+  return res.render('recruiting-college-students')
+})
+
+app.get('/recruiting-after-graduate',(req,res) => {
+  return res.render('recruiting-after-graduate')
+})
+
+app.get('/recruiting-inter-university',(req,res) => {
+  return res.render('recruiting-inter-university')
+})
+
 
  
 
